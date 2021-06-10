@@ -1,0 +1,40 @@
+Feedback on Assignment 1:
+Peer-Students:
+Question 2 (Task 3):
+Rate the quality of the data exploration task. Consider both the technical difficulty and re relevance of the observations for the purpose of the fake news detection. Please provide detailed comments and potential suggestions for improvements.
+
+Reviewer #2:
+Good observations and well structured code in order to show domain names and article types. Though showing heavily used words could give a good insight into what themes are heavily associated with fake news.
+
+Question 3 (Task 4):
+Rate the quality of this task. Comment on the data obtained in the scraping exercise. Could more data have been extracted? Could other metadata have been included? Are there other ways that the scraping could have been improved?
+
+Reviwer #1:
+Usign selenium is overkill as you do not need to load JavaScript. There is no need to use selenium to find the next link when you can look at the href attribute of an <a> tag. So your lines button = driver.find_element_by_link_text("next page") button.click() url = driver.current_url could be replaces. You only found title and date. You should also find content. You could also find tags.
+
+Question 4 (overall comments):
+Ruixiang Cui:
+Excellent works for Task 2 and 3! For task 4 good that you tried different ways to scrape it, though the content is missing. But I think you have demonstrated you knew how to do it. Keep it up!
+
+Feedback on Assignment 2:
+Quesion 2 (Task 2):
+Rate the quality of Task 2. Were the relations correctly described? The most difficult part of this task was the last part about BCNF - did the group provide satisfactory answers to this part?
+
+Reviewer #2:
+Very good! But you could have mentioned the pros and cons of BCNF
+
+Question 3 (Task 3):
+Rate the quality of task 3. Were the queries correct? Could they have been written differently?
+
+Reviewer #1:
+Didn't answer all questions, 3.1 correct 3.2 you are just listing top 2, what if there's a shared 1st place? What if John Rolls was in another authorGroup aswell? (you wouldnt have counted that) 3.3 Clean better next time then so you can execute the query
+
+Reviewer #3:
+3.1 - rigtig fint, korrekte 3 domains med typen reliable, så vidt vi ved 3.2 - igen meget fint med det formodentlige rigtige resultat 3.3 - Som I også selv har skrevet, er I ikke helt kommet i mål med denne grundet mangelfuld rensning af data. Det kan I sikkert hurtigt få fikset :)
+
+Question 5 (Overall comments):
+Ruixiang Cui:
+For task 1, you proved that you have a workable scheme, but it would be clearer to combine descriptions with visualisations. Besides, some prints are too long and could be disturbing, try to limit to essential output next time.
+For task 2, your definition for 3NF seems incorrect, it means there should be no transitive dependencies. But your analysis of FDs and BCNF are all good.
+For task 3, there were no relational algebra shown which is required; For 3.3, maybe try to clean it and use SELECT COUNT method?
+For task 4, the observations are wonderful, but same advice as in task 1.
